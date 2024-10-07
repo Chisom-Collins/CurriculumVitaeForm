@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CV Submission Form</h2>
+        <form id="cvForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Cellphone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="references">References:</label>
+                <textarea id="references" name="references" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit CV</button>
+            </div>
+        </form>
+        <p id="message"></p>
+        <button id="downloadPdf">Download CV as PDF</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
